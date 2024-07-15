@@ -7,7 +7,7 @@ const Post = require("./models/post");
 const app = express();
 mongoose
   .connect(
-    "mongodb+srv://qasimk2:pIxanpR1cxrO4jkQ@cluster0.sohvcbf.mongodb.net/MyMessagePost?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb://localhost:27017/"
   )
   .then(() => {
     console.log("Connected to database!");
