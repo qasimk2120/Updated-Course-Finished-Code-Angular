@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatToolbar } from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -37,7 +37,7 @@ import { AuthInterceptor } from './auth/auth-interceptor';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbar,
+    MatToolbarModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatPaginatorModule
