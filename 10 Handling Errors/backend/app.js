@@ -9,13 +9,12 @@ const userRoutes = require("./routes/user");
 const app = express();
 mongoose
   .connect(
-    "mongodb+srv://qasimk2:G8BiAGTxojcggRnO@cluster0.sohvcbf.mongodb.net/MyMessagePost?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb://localhost:27017/"
   )
   .then(() => {
     console.log("Connected to database!");
   })
   .catch(() => {
-    res.staus(500).json({message: "Database Error"})
     console.log("connection to database failed ");
   });
 
