@@ -89,7 +89,7 @@ export class PostsService {
       };
     }
     this.http
-      .put('BACKEND_URL' + id, postData)
+      .put(BACKEND_URL + id, postData)
       .subscribe(response => {
         this.router.navigate(['/']);
       });
